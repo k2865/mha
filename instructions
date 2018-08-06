@@ -1,0 +1,9 @@
+download
+git pull
+
+update
+git add -A
+git commit -m "XXX"
+git pull --rebase origin master
+git push -u origin master
+
