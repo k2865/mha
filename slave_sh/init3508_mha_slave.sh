@@ -11,4 +11,5 @@ chown -R mysql:mysql /data/57mysql/mysql3508
 sleep 2
 /usr/local/mysql57/bin/mysql -S /tmp/mysql3508.sock -uroot  </tmp/create_t2_3508.sql
 /usr/local/mysql57/bin/mysql -S /tmp/mysql3508.sock -uroot -pzstzst
+ll
 
