@@ -15,12 +15,14 @@ MHA原理总结为以下过程：
 - 使用其他的slave连接新的master进行复制。
 
 本次实验环境:
+
 实验环境：(centos7.3 MySQL版本5.7.23)
-功能|ip|名称|server_id|备注
----|:--:|---:
-Monitor host|192.168.99.210|db210|1|也是一个slave
-Master|192.168.99.211|db211|2|vip:192.168.99.253
-Candicate master |192.168.99.212|db212|3|
+
+
+Monitor host:192.168.99.210(db210) 也是一个slave
+Master:192.168.99.211(db211)
+vip:192.168.99.253
+Candicate master 192.168.99.212(db212)
 
 #### 安装
 - 配置所有节点两两SSH互信
