@@ -4,7 +4,7 @@
 #### 介绍
 
 MHA（Master High Availability）,在传统MySQL复制框架下,是一个相对成熟的高可用解决方案，它由日本DeNA公司youshimaton（现就职于Facebook公司）开发，主要优势在于自动补全数据,并快速切换主节点。在MySQL故障切换过程中，MHA能做到在0~30秒之内自动完成数据库的故障切换操作，并且在进行故障切换的过程中，MHA能在最大程度上保证数据的一致性。
-####原理
+#### 原理
 MHA由两部分组成：MHA Manager（管理端）和MHA Node（数据节点）。MHA Manager可以单独部署在一台独立的机器上管理多个master-slave集群,也可以部署在一台slave节点上。MHA Node运行在每台MySQL服务器上，MHA Manager会定时探测集群中的master节点，当master出现故障时，它可以自动将最新数据的slave提升为新的master，然后将所有其他的slave重新指向新的master。整个故障转移过程对应用程序完全透明。
 MHA原理总结为以下过程：
 - 从宕机崩溃的master保存二进制日志事件（binlog events）;
