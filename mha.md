@@ -22,7 +22,7 @@ Monitor host|192.168.99.210|db210|1|也是一个slave
 Master|192.168.99.211|db211|2|vip:192.168.99.253
 Candicate master |192.168.99.212|db212|3|
 
-####安装
+#### 安装
 - 配置所有节点两两SSH互信
  在一个节点上生成authorized_keys、id_rsa、id_rsa.pub三个文件,并将这个文件复制到所有节点中.即可实现SSH互信.
 ```
